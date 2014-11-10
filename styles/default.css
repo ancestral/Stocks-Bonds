@@ -7,15 +7,10 @@
 
 body {
   background-color: #ccc;
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-  user-select: none;
 }
 
 table {
-  background-color: #666;
+  background-color: #444;
   padding: 8px;
   border-collapse:collapse;
   border-spacing: 0;
@@ -76,7 +71,7 @@ small {
 }
 
 .fill-in td {
-  font-family: 'La Belle Aurore'; //'Nothing you could do';
+  font-family: 'La Belle Aurore';
   font-size: 20px;
   padding-top: 8px;
   padding-bottom: -8px;

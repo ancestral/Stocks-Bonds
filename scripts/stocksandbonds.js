@@ -60,23 +60,25 @@ $(function() {
   function fillInPrices(company) {
     var lastYearPrice = 100;
     var didItSplit = false;
-    if (StocksAndBonds.year > 2) {
-      lastYearPrice = $('#' + company + ' td:nth-child(' + (StocksAndBonds.year - 1) + ')').html();
-    }
-    if (isNaN(lastYearPrice)) {
-      lastYearPrice = lastYearPrice.substring(0, lastYearPrice.length-1);
-    }
-    var thisYearPrice = StocksAndBonds[StocksAndBonds.market][StocksAndBonds.diceRoll][StocksAndBonds.iter] + parseInt(lastYearPrice, 10);
+    if (StocksAndBonds.year <= 12) {
+      if (StocksAndBonds.year > 2) {
+        lastYearPrice = $('#' + company + ' td:nth-child(' + (StocksAndBonds.year - 1) + ') span').html();
+      }
+      if (isNaN(lastYearPrice)) {
+        lastYearPrice = lastYearPrice.substring(0, lastYearPrice.length-1);
+      }
+      var thisYearPrice = StocksAndBonds[StocksAndBonds.market][StocksAndBonds.diceRoll][StocksAndBonds.iter] + parseInt(lastYearPrice, 10);
     
-    if (thisYearPrice > 150) {
-      thisYearPrice = Math.floor(thisYearPrice / 2);
-      didItSplit = true;
-    }
+      if (thisYearPrice > 150) {
+        thisYearPrice = Math.floor(thisYearPrice / 2);
+        didItSplit = true;
+      }
     
-    $('#' + company + ' td:nth-child(' + StocksAndBonds.year + ')').html(thisYearPrice);
-    if (didItSplit) {
-      $('#' + company + ' td:nth-child(' + StocksAndBonds.year + ')').append('*');
+      $('#' + company + ' td:nth-child(' + StocksAndBonds.year + ') span').html(thisYearPrice);
+      if (didItSplit) {
+        $('#' + company + ' td:nth-child(' + StocksAndBonds.year + ') span').append('*');
+      }
+      StocksAndBonds.iter++;
     }
-    StocksAndBonds.iter++;
   }
 });
