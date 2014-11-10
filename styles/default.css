@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'League Gothic';
+  src: url(../fonts/LeagueGothic-Regular.otf);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: #ccc;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+table {
+  background-color: #666;
+  padding: 8px;
+  border-collapse:collapse;
+  border-spacing: 0;
+  color: #ccc;
+}
+
+td {
+  width: 48px;
+  text-align: center;
+  font-family: helvetica, sans-serif;
+  font-size: 10px;
+}
+
+tr {
+  height: 48px;  
+}
+
+td, th, tr, #next {
+  border: 1px solid #999;
+}
+
+#next {
+  width: 48px;
+  text-align: center;
+  color: #ccc;
+  background: #090;
+  margin-top: 16px;
+  float: left;
+}
+
+#roll {
+  padding: 20px;
+  position: absolute;
+  left: 80px;
+}
+
+#next:active {
+  background: #6c6;
+  color: #666;
+}
+
+th, #next {
+  font-family: 'League Gothic';
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0px 16px;
+}
+
+
+tbody tr th:first-child {
+  text-align: right;
+}
+
+small {
+  display: block;
+  font-family: helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.fill-in td {
+  font-family: 'La Belle Aurore'; //'Nothing you could do';
+  font-size: 20px;
+  padding-top: 8px;
+  padding-bottom: -8px;
+}
