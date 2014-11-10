@@ -3,7 +3,7 @@ Stocks & Bonds
 
 A digital re-creation of the [3M board game from 1964](http://www.boardgamegeek.com/boardgame/1590/stocks-bonds) (with the exception of no event cards).
 
-**[Try it out here](http://mproud.com/stocksandbonds/)**
+**[Try it out here!](http://mproud.com/stocksandbonds/)**
 
 ![Chalkboard Preview](preview.png)
 
@@ -22,7 +22,7 @@ Otherwise, follow the rules as in the board game.
 Copyright (c) 2010, Caroline Hadilaksono & Micah Rich <caroline@hadilaksono, micah@micahrich.com>, with Reserved Font Name: "League Gothic".
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at:
+This license is included in the project, and is also available at:
 http://scripts.sil.org/OFL
 
 Version 1.1 - 26 February 2007
