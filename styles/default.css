@@ -39,6 +39,12 @@ td, th, tr, #next {
   background: #090;
   margin-top: 16px;
   float: left;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 
 #roll {
@@ -71,7 +77,7 @@ small {
 }
 
 .fill-in td {
-  font-family: 'La Belle Aurore';
+  font-family: 'La Belle Aurore'; //'Nothing you could do';
   font-size: 20px;
   padding-top: 8px;
   padding-bottom: -8px;
