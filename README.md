@@ -1,5 +1,5 @@
 Stocks & Bonds
-============
+==============
 
 A digital re-creation of the [3M board game from 1964](http://www.boardgamegeek.com/boardgame/1590/stocks-bonds) (with the exception of no event cards).
 
@@ -9,11 +9,13 @@ A digital re-creation of the [3M board game from 1964](http://www.boardgamegeek.
 
 ## How this works
 
-Click the `Next` button to “roll” the dice. The table then gets updated with the changes in the stock market for each commodity, for that year.
+Click the `Next` button to “roll” the dice. The number next to the button indicates your die roll. The table then gets updated with the changes in the stock market for each commodity, for that year.
 
-If an event card comes up that changes a price, simply click in the cell and edit the price.
+If an event card comes up that changes a price, simply click in the cell and edit the price manually.
 
-Otherwise, follow the rules as in the board game.
+If a stock price eclipses 150 points, the stock will automatically split. An asterisk denotes a stock split, at the new price.
+
+As always, follow the rules as in the board game.
 
 ## License
 
